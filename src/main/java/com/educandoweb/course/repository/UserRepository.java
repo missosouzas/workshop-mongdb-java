@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.educandoweb.course.domain.User;
 
 @Repository
-public interface UserRepository extends MongoRepository<User, String> {
+public interface UserRepository extends MongoRepository<User, String>  {
 
 }
+
