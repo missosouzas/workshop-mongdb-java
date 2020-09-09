@@ -36,6 +36,12 @@ public class Post implements Serializable{
 		this.author=author;
 	}
 
+	public Post(String id, String title) {
+		super();
+		this.id = id;
+		this.title = title;
+		
+	}
 	public AuthorDTO getAuthor() {
 		return author;
 	}
