@@ -1,5 +1,6 @@
 package com.educandoweb.course.services;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -33,5 +34,12 @@ public class PostService {
  	}
 	
 
-
+  public List<Post> fullSearch(String text, Date minDate, Date maxDate){
+	     //maxDate = new Date(maxDate.getTime() + 24 * 60 * 60 * 1000);
+	  //isto era para arrumar a data , para considerar o dia corretamente
+	  // no teste que fiz não foi necessário usar,, ele acrescenta 24h na hora.
+	      System.out.println(maxDate);
+	     return  repo.fullSearch(text, minDate, maxDate);
+  }
+	
 }
